@@ -6,4 +6,4 @@ test:
 	pipenv run nosetests
 
 coverage:
-	pipenv run nosetests --with-coverage --cover-package=flask_swaggervalidator
+	pipenv run nosetests --with-coverage --cover-package=flask_swaggervalidator --cover-erase --cover-branches
