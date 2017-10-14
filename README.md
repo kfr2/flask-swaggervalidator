@@ -1,5 +1,7 @@
 # Flask-SwaggerValidator
 
+[![Build Status](https://travis-ci.org/kfr2/flask-swaggervalidator.svg?branch=add-travis)](https://travis-ci.org/kfr2/flask-swaggervalidator)
+
 This project exposes a couple of decorators that can be used to validate
 a Flask Request or Response based on an operation within a Swagger (OpenAPI Specification)
 specification file. It currently uses bravado-core for this validation. Note that this
