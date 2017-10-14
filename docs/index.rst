@@ -1,20 +1,18 @@
 Flask-SwaggerValidator
 ======================
 
-Flask-SwaggerValidator is a utility to validate Flask requests and responses
-against an `OpenAPI Specification <https://github.com/OAI/OpenAPI-Specification>`_ (Swagger) document. It presently does so through decorators that are applied to an application's view functions.
+`Flask-SwaggerValidator <https://github.com/kfr2/flask-swaggervalidator>`_ is a utility to validate Flask requests and responses against an `OpenAPI Specification <https://github.com/OAI/OpenAPI-Specification>`_ (Swagger) document. It presently does so through decorators that are applied to an application's view functions.
 
-It is currently very early in development so its interfaces may drastically change.
+Notes
+-----
+This project is currently very early in development so its interfaces may drastically change.
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+Decorators
+----------
+.. automodule:: flask_swaggervalidator.decorators
+   :members:
 
+Examples
+--------
+.. include:: examples.rst
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

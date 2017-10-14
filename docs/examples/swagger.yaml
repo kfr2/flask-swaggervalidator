@@ -1,0 +1,76 @@
+swagger: "2.0"
+info:
+  title: test api
+  description: used to test swagger_validator
+  version: "1.0.0"
+  contact:
+    name: Kevin
+  license:
+    name: All rights reserved.
+
+tags:
+- name: subjects
+  description: Operations on subjects
+
+paths:
+  /subjects:
+    get:
+      tags:
+        - subjects
+      summary: returns list of subjects
+      operationId: api.views.listSubjects
+      description: |
+        Returns the subjects in the system. For now, all subjects will
+        be returned but in the future we may want to fetch them from
+        particular "libraries" or collections or allow filtering.
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: subject results
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Subject'
+
+  /subjects/{id}:
+    get:
+      tags:
+        - subjects
+      summary: returns specific subject
+      operationId: api.views.fetchSubject
+      description: |
+        Returns a specific subject based on its primary key.
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          type: string
+          in: path
+          required: true
+          description: id of subject to fetch
+      responses:
+        "200":
+          description: subject
+          schema:
+            $ref: '#/definitions/Subject'
+        "400":
+          description: subject not found
+
+definitions:
+  Subject:
+    type: object
+    required:
+      - id
+      - name
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+        maxLength: 255
+        example: History
+      notes:
+        type: string
+        maxLength: 255
+        example: This is an optional field!
