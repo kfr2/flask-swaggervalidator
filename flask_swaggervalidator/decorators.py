@@ -68,6 +68,7 @@ def validate_swagger_request(operation_id, swagger_spec_path='swagger.yaml', deb
         operation_id (string): The name of the operation the response should be
             validated against.
         swagger_spec_path (string): The path to the Swagger specification file.
+        debug_only (boolean): Only validate the request if Flask is in debug mode.
 
     Returns:
         return value from decorated view function
@@ -97,6 +98,7 @@ def validate_swagger_response(operation_id, swagger_spec_path='swagger.yaml', de
         operation_id (string): The name of the operation the response should be
             validated against.
         swagger_spec_path (string): The path to the Swagger specification file.
+        debug_only (boolean): Only validate the request if Flask is in debug mode.
 
     Returns:
         return value from decorated view function
