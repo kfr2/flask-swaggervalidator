@@ -6,10 +6,9 @@ specification file. It currently uses bravado-core for this validation. Note tha
 project is in the very early stages of development and its interfaces are likely to change
 substantially.
 
-## decorators
+## Documentation
 
-* decorators.validate_swagger_request(operation_id, swagger_spec_path='swagger.yaml')
-* decorators.validate_swagger_response(operation_id, swagger_spec_path='swagger.yaml')
+Documentation is available on [Read the Docs](http://flask-swaggervalidator.rtfd.io/).
 
 ## Running tests
 
@@ -18,6 +17,9 @@ case, [nose](http://nose.readthedocs.io/en/latest/) must be in the environment.
 
 ## To Do
 
-These Swagger validation libraries should be examined:
+Although bravado-core is a nice library, these Swagger validation libraries should be
+examined to see if they offer any additional benefits. For example, I'd like the library
+to validate that all attributes in a response body are listed in the specification file.
+
 * https://pypi.python.org/pypi/flex
 * https://pypi.python.org/pypi/swagger-spec-validator
