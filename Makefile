@@ -1,6 +1,11 @@
+.PHONY: init docs test coverage
+
 init:
 	pip install pipenv
 	pipenv install --dev
+
+docs:
+	cd docs && pipenv run make html
 
 test:
 	pipenv run nosetests
