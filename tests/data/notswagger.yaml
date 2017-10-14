@@ -1,0 +1,8 @@
+---
+things:
+  - one
+  - two
+  - three
+another:
+  yes: hello
+  no: ahhh
