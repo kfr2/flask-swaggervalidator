@@ -10,6 +10,7 @@ cache: pip
 jobs:
   include:
     - stage: test
+      python: 3.6
       script: "make coverage"
     - stage: coverage
       python: 3.6
