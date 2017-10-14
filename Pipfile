@@ -8,7 +8,6 @@ name = "pypi"
 nose = "*"
 Sphinx = "*"
 "sphinx-autobuild" = "*"
-"Flask-Sphinx-Themes" = "*"
 
 
 [packages]

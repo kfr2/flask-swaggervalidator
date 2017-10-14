@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c3d22b38326af81bceac61a753291b8cd457c1fbb0e924fd30039352f0e68913"
+            "sha256": "4effe02d83f3a5aa652ecf41508f186f4e092662e18a0a4d0440799339fc0433"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -227,13 +227,6 @@
             ],
             "version": "==0.14"
         },
-        "flask-sphinx-themes": {
-            "hashes": [
-                "sha256:3a5d94f4a28044641153c9fd4823c2d93f2beecc69127f7be736e9d2e29e1a05",
-                "sha256:a83eebca95fc5b8adbae4e65926961912edd52a1b6a422c0301a750d1ae31747"
-            ],
-            "version": "==1.0.1"
-        },
         "idna": {
             "hashes": [
                 "sha256:8c7309c718f94b3a625cb648ace320157ad16ff131ae0af362c9f21b80ef6ec4",
@@ -386,7 +379,6 @@
                 "sha256:63a8255fe7c6269916baa440eb9b6a67139b0b97a01af632e7bd2842e1e02f15",
                 "sha256:d514bd84b284dd3e844f0305ac07511f097e325171f6cc4a20878d11ad771849"
             ],
-            "markers": "python_version < '3.5'",
             "version": "==3.6.2"
         },
         "urllib3": {
