@@ -5,7 +5,7 @@ python:
   - "3.5"
   - "3.6"
 install: "make"
-script: "make coverage"
+script: "make test"
 cache: pip
 jobs:
   include:
