@@ -5,12 +5,12 @@ python:
   - "3.5"
   - "3.6"
 install: "make"
-script: "make test"
+script: "make coverage"
 cache: pip
 jobs:
   include:
     - stage: test
-      script: "make test"
+      script: "make coverage"
     - stage: coverage
       python: 3.6
       script: codecov
