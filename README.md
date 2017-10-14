@@ -1,6 +1,9 @@
 # Flask-SwaggerValidator
 
-[![Build Status](https://travis-ci.org/kfr2/flask-swaggervalidator.svg?branch=add-travis)](https://travis-ci.org/kfr2/flask-swaggervalidator)
+[![Build Status](https://travis-ci.org/kfr2/flask-swaggervalidator.svg?branch=master)](https://travis-ci.org/kfr2/flask-swaggervalidator)
+[![codecov](https://codecov.io/gh/kfr2/flask-swaggervalidator/branch/master/graph/badge.svg)](https://codecov.io/gh/kfr2/flask-swaggervalidator)
+[![Documentation Status](https://readthedocs.org/projects/flask-swaggervalidator/badge/?version=latest)](http://flask-swaggervalidator.readthedocs.io/en/latest/?badge=latest)
+
 
 This project exposes a couple of decorators that can be used to validate
 a Flask Request or Response based on an operation within a Swagger (OpenAPI Specification)

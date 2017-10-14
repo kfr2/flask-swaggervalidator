@@ -8,6 +8,8 @@ python:
   - "3.5"
   - "3.6"
 install: "make"
-script: "make coverage"
+script:
+  - make coverage
+  - make docs
 after_success:
   - if [[ $TRAVIS_PYTHON_VERSION == $NEWEST_PYTHON ]]; then codecov; fi
