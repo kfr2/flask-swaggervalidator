@@ -6,12 +6,13 @@ name = "pypi"
 [dev-packages]
 
 nose = "*"
-Sphinx = "*"
+sphinx = "*"
 "sphinx-autobuild" = "*"
+codecov = "*"
 
 
 [packages]
 
-Flask = "*"
+flask = "*"
 "bravado-core" = "*"
-PyYAML = "*"
+pyyaml = "*"
