@@ -1,3 +1,6 @@
+env:
+  global:
+    - NEWEST_PYTHON=3.6
 language: python
 python:
   - "2.7"
@@ -6,9 +9,5 @@ python:
   - "3.6"
 install: "make"
 script: "make coverage"
-cache: pip
-jobs:
-  include:
-    - stage: coverage
-      python: 3.6
-      script: codecov
+after_success:
+  - if [[ $TRAVIS_PYTHON_VERSION == $NEWEST_PYTHON ]]; then codecov; fi
